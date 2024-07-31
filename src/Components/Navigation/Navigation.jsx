@@ -4,7 +4,6 @@ function Navigation() {
     return (
         <>
             <div className="navigation">
-                <h1>Navigation</h1>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
