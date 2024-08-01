@@ -7,9 +7,11 @@ function Homepage() {
 
     return (
         <>
-            <Navigation />
-            <HomepageSection />
-            <Footer />
+            <div className="body-container">
+                <Navigation />
+                <HomepageSection />
+                <Footer />
+            </div>
         </>
     );
 }

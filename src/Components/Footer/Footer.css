@@ -1,0 +1,12 @@
+.footer {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer p a {
+    color: #fff;
+}
