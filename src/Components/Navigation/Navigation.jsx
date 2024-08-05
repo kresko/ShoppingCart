@@ -1,4 +1,6 @@
 import './Navigation.css';
+import { IoCart } from "react-icons/io5";
+
 
 function Navigation() {
     return (
@@ -6,11 +8,10 @@ function Navigation() {
             <div className="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
                 </ul>
 
                 <div className="add-to-cart-button-container">
-                    <button className="add-to-cart-button">Add to cart</button>
+                    <button className="add-to-cart-button"><IoCart/></button>
                 </div>
             </div>
         </>

@@ -18,3 +18,25 @@
 .navigation ul li a {
     color: #fff;
 }
+
+.navigation .add-to-cart-button-container {}
+
+
+.navigation .add-to-cart-button-container .add-to-cart-button {
+    display: inherit;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.navigation .add-to-cart-button-container .add-to-cart-button svg {
+    color: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.navigation .add-to-cart-button-container .add-to-cart-button svg:hover {
+    color: #ddd;
+}
