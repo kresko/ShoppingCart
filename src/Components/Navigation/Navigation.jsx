@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Navigation.css';
 import { IoCart } from "react-icons/io5";
 
@@ -7,11 +8,13 @@ function Navigation() {
         <>
             <div className="navigation">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><Link to="/">Home</Link></li>
                 </ul>
 
                 <div className="add-to-cart-button-container">
-                    <button className="add-to-cart-button"><IoCart/></button>
+                    <Link to="cart" className="add-to-cart-button">
+                        <IoCart/>
+                    </Link>
                 </div>
             </div>
         </>

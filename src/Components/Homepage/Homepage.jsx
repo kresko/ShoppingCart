@@ -1,5 +1,5 @@
-import Footer from '../Components/Footer/Footer';
-import Navigation from '../Components/Navigation/Navigation';
+import Footer from '../Footer/Footer';
+import Navigation from '../Navigation/Navigation';
 import HomepageSection from './HomapageSection/HomepageSection';
 import './Homepage.css';
 
