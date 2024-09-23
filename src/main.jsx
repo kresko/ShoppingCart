@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Homepage from './Components/Homepage/Homepage.jsx'
-import './index.css'
-import Cart from './Components/Cart/Cart.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Homepage from './Components/Homepage/Homepage.jsx';
+import './index.css';
+import Cart from './Components/Cart/Cart.jsx';
 
 const router = createBrowserRouter([
   {

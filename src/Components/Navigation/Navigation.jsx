@@ -1,13 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 import { IoCart } from "react-icons/io5";
-import { useEffect, useState } from "react";
-import RequestBuilderCart from '../Api/RequestBuilder/RequestBuilderCart';
 
-function Navigation() {
-    let test = RequestBuilderCart('https://fakestoreapi.com/carts/5');
-    console.log(test);
-
+function Navigation({ fakestoreCartApiResponse }) {
     return (
         <>
             <div className="navigation">

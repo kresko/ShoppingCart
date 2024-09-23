@@ -10,7 +10,7 @@ const RequestBuilderCart = (url) => {
         const response = await fetch(url);
 
         if (!response.ok) {
-          throw new Error(`Failed to fetch   
+          throw new Error(`Failed to fetch 
  data: ${response.status}`);
         }
         const data = await response.json();
@@ -26,4 +26,5 @@ const RequestBuilderCart = (url) => {
   return { data, error }
 };
 
+RequestBuilderCart.propTypes;
 export default RequestBuilderCart;
