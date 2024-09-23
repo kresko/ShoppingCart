@@ -1,15 +1,9 @@
 import './CartSection.css';
 
-function CartSection({ productItemData }) {
-    let productsLength = productItemData.data;
-
-    // if (productItemData.data.products ?? false) {
-    //     console.log("true");
-    // } else {
-    //     console.log("false");
-    // }
-
-    console.log(productsLength);
+function CartSection({ cartResponse, productsResponse }) {
+    
+    console.log(cartResponse);
+    console.log(productsResponse);
 
     return (
         <>
