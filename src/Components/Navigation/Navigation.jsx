@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 import { IoCart } from "react-icons/io5";
 
-function Navigation() {
+function Navigation({ cartResponse }) {
+
     return (
         <>
             <div className="navigation">
