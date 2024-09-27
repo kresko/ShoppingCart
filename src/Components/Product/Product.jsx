@@ -1,9 +1,11 @@
 import './Product.css';
 
-function Product() {
+function Product({ productItem }) {
     return (
         <>
-            product item
+            <div className="product-item">
+                <h3>{{ productItem.title}}</h3>
+            </div>
         </>
     );
 }

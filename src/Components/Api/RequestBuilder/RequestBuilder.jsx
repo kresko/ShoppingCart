@@ -3,10 +3,12 @@ import { useEffect, useState } from 'react';
 const RequestBuilderCart = (url) => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true);
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -16,13 +18,15 @@ const RequestBuilderCart = (url) => {
         setData(data);
       } catch (error) {
         setError(error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, [url]);
 
-  return { data, error }
+  return { data, error, loading }
 };
 
 RequestBuilderCart.propTypes;
