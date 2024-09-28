@@ -1,10 +1,24 @@
 import './Product.css';
 
-function Product({ productItem }) {
+const Product = ({ productItem }) => {
     return (
         <>
             <div className="product-item">
-                <h3>{{ productItem.title}}</h3>
+                <div className="img-container">
+                    <img src={productItem.image} />
+                </div>
+                 <div className="product-data">
+                    <div className="product-info">
+                        <h3 className='product-title'>{productItem.title}</h3>
+                        <p>{productItem.description}</p>
+                    </div>
+
+                    <div className="quantity-widget">
+                        <button className='quantity-increase'>+</button>
+                        <span className='display-quantity'>{productItem.quantity}</span>
+                        <button className='quantity-decrease'>-</button>
+                    </div>
+                 </div>
             </div>
         </>
     );

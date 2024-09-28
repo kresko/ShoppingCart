@@ -14,10 +14,11 @@ function App() {
     return (
         <>
             <div className="body-container">
-                <Navigation updateCartResponse={ updateCartResponse }/>
+                <Navigation cartResponse={cartResponse}/>
                 <Outlet 
                     context={{
-                        updateCartResponse: updateCartResponse
+                        updateCartResponse: updateCartResponse,
+                        cartResponse: cartResponse
                     }}
                 />
                 <Footer />

@@ -14,6 +14,7 @@ function Navigation({ cartResponse }) {
                 <div className="add-to-cart-button-container">
                     <Link to="cart" className="add-to-cart-button">
                         <IoCart/>
+                        <p>{cartResponse}</p>
                     </Link>
                 </div>
             </div>
@@ -21,4 +22,5 @@ function Navigation({ cartResponse }) {
     );
 }
 
+Navigation.propTypes;
 export default Navigation;

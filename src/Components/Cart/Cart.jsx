@@ -4,13 +4,13 @@ import RequestBuilder from '../Api/RequestBuilder/RequestBuilder';
 import CartSection from './CartSection/CartSection';
 
 function Cart() {
-    const { updateCartResponse } = useOutletContext();
+    const { updateCartResponse, cartResponse } = useOutletContext();
     let fakestoreCartApiResponse = RequestBuilder('https://fakestoreapi.com/carts/5');
 
     return (
         <>
             <div className="body-container">
-                <CartSection cartResponse={fakestoreCartApiResponse} updateCartResponse={updateCartResponse} />
+                <CartSection cartResponse={cartResponse !== null ? cartResponse : fakestoreCartApiResponse} updateCartResponse={updateCartResponse} />
             </div>
         </>
     );

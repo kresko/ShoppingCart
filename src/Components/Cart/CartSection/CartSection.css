@@ -1,0 +1,8 @@
+.cart-section-title {
+    padding: 10px 20px 0 20px;
+}
+
+.product-items-container {
+    display: inherit;
+    flex-direction: column;
+}
