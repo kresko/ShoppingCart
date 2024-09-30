@@ -1,10 +1,15 @@
 import './Cart.css'
-import { useOutletContext } from 'react-router-dom';
+import { useState } from 'react';
 import RequestBuilder from '../Api/RequestBuilder/RequestBuilder';
 import CartSection from './CartSection/CartSection';
 
 function Cart() {
-    const { updateCartResponse, cartResponse } = useOutletContext();
+    const [cartResponse, setCartResponse] = useState(null);
+
+    function updateCartResponse(updatedCartResponse) {
+        setCartResponse(updatedCartResponse);
+    }
+
     let fakestoreCartApiResponse = RequestBuilder('https://fakestoreapi.com/carts/5');
 
     return (

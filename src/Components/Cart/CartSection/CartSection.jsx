@@ -12,7 +12,7 @@ function CartSection({ cartResponse, updateCartResponse }) {
 
             <div className="product-items-container">
                 {Object.entries(productsResponse).map(([key, value]) => (
-                    <Product key={key} productItem={value} updateCartResponse={updateCartResponse}/>
+                    <Product key={key} productItem={value} updateCartResponse={updateCartResponse} cartResponse={cartResponse} />
                 ))}
             </div>
         </>

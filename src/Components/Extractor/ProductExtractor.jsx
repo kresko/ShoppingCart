@@ -21,7 +21,6 @@ const ProductExtractor = (cartData) => {
         }
     }
 
-    console.log(filteredProducts);
     return filteredProducts;
 }
 

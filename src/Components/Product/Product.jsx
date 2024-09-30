@@ -1,6 +1,16 @@
 import './Product.css';
 
-const Product = ({ productItem }) => {
+const Product = ({ productItem, updateResponse, cartResponse }) => {
+    function addTocart() {
+        
+    }
+
+    function removeFromCart() {
+
+    }
+
+    console.log(cartResponse);
+
     return (
         <>
             <div className="product-item">
