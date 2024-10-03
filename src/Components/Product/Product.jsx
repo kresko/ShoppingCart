@@ -9,6 +9,8 @@ const Product = ({ productItem, updateResponse, cartResponse }) => {
 
     }
 
+    //Napisi checkera koji gleda prema id-u itema i updatea quantity na +/- button
+    //funkcija dva parametra id, cijeli cartResponse
     console.log(cartResponse);
 
     return (
