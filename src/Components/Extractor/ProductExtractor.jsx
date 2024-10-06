@@ -7,16 +7,19 @@ const ProductExtractor = (cartData) => {
     let filteredCartProductsId = []; 
     let filteredCartProductData = [];
 
+    console.log(cartData);
     if (cartData !== null) {
         for(let i = 0; i < cartData.products.length; i++) {
             filteredCartProductsId.push(cartData.products[i].productId);
             filteredCartProductData.push([cartData.products[i].productId ,cartData.products[i].quantity]);
         }
 
-        for(let i = 0; i < fakestoreProductsApiResponse.data.length; i++) {
-            if (checkIfCartProductsIdIsAvailable(filteredCartProductsId ,fakestoreProductsApiResponse.data[i])) {
-                let productItem = expandProductItemWithQuantity(fakestoreProductsApiResponse.data[i], filteredCartProductData);
-                filteredProducts.push(productItem);
+        if (fakestoreProductsApiResponse.data !== null) {
+            for(let i = 0; i < fakestoreProductsApiResponse.data.length; i++) {
+                if (checkIfCartProductsIdIsAvailable(filteredCartProductsId ,fakestoreProductsApiResponse.data[i])) {
+                    let productItem = expandProductItemWithQuantity(fakestoreProductsApiResponse.data[i], filteredCartProductData);
+                    filteredProducts.push(productItem);
+                }
             }
         }
     }

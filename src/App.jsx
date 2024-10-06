@@ -1,16 +1,17 @@
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import Navigation from './Components/Navigation/Navigation';
+import RequestBuilder from './Components/Api/RequestBuilder/RequestBuilder';
 import { Outlet } from 'react-router-dom';
 
 function App() {
-  
-    //probaj jos jedanput sa novim statetom
+    const fakestoreCartApiResponse = RequestBuilder('https://fakestoreapi.com/carts/5');
+
     return (
         <>
             <div className="body-container">
-                <Navigation />
-                <Outlet />
+                <Navigation cartData={fakestoreCartApiResponse}/>
+                <Outlet context={fakestoreCartApiResponse} />
                 <Footer />
             </div>
         </>

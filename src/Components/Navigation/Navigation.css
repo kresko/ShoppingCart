@@ -19,7 +19,9 @@
     color: #fff;
 }
 
-.navigation .add-to-cart-button-container {}
+.navigation .add-to-cart-button-container {
+    display: inherit;
+}
 
 
 .navigation .add-to-cart-button-container .add-to-cart-button {
@@ -39,4 +41,8 @@
 
 .navigation .add-to-cart-button-container .add-to-cart-button svg:hover {
     color: #ddd;
+}
+
+.navigation .add-to-cart-button-container .cart-quantity {
+    color: #fff;
 }

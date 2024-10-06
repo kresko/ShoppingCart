@@ -14,8 +14,8 @@ const RequestBuilderCart = (url) => {
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);
         }
-        const data = await response.json();
-        setData(data);
+        const jsonData = await response.json();
+        setData(jsonData);
       } catch (error) {
         setError(error);
       } finally {
