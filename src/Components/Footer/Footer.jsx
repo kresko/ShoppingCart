@@ -1,10 +1,11 @@
+import Glossary from '../../Data/Glossary';
 import './Footer.css';
 
 function Footer() {
     return (
         <>
             <div className="footer">
-                <p>Copyright &copy; by <a href="https://github.com/kresko">Kresko</a></p>
+                <p>{Glossary.footer.copyright} &copy; by <a href={Glossary.footer.link}>{Glossary.footer.name}</a></p>
             </div>
         </>
     );

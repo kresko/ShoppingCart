@@ -1,9 +1,12 @@
-import './HomepageSection.css';
+import "./HomepageSection.css";
+import Glossary from "../../../Data/Glossary";
+
+Glossary
 
 function HomepageSection() {
     return (
         <>
-            <h1>Homepage Section</h1>
+            <h1 className="homepage-title">{Glossary.homepage.homepageTitle}</h1>
         </>
     )
 }

@@ -1,5 +1,4 @@
 import HomepageSection from './HomapageSection/HomepageSection';
-import './Homepage.css';
 
 function Homepage() {
     return (

@@ -3,6 +3,7 @@ import './Navigation.css';
 import { IoCart } from "react-icons/io5";
 import CartQuantityExtractor from '../Extractor/CartQuantityExtractor';
 import { useState, useEffect } from 'react';
+import Glossary from '../../Data/Glossary';
 
 function Navigation({ cartData }) {
      const [updatedCartQuantity, setUpdatedCartQuantity] = useState(0);
@@ -18,7 +19,7 @@ function Navigation({ cartData }) {
         <>
             <div className="navigation">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">{Glossary.navigation.links.home}</Link></li>
                 </ul>
 
                 <div className="add-to-cart-button-container">

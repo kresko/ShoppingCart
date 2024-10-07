@@ -1,6 +1,5 @@
 
 function CartQuantityExtractor(cartData) {
-    console.log(cartData);
     if (cartData.data && Array.isArray(cartData.data.products)) {
         let cartQuantity = 0;
 

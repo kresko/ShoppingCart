@@ -7,7 +7,6 @@ const ProductExtractor = (cartData) => {
     let filteredCartProductsId = []; 
     let filteredCartProductData = [];
 
-    console.log(cartData);
     if (cartData !== null) {
         for(let i = 0; i < cartData.products.length; i++) {
             filteredCartProductsId.push(cartData.products[i].productId);
