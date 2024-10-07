@@ -3,8 +3,6 @@ import Product from '../../Product/Product';
 import './CartSection.css';
 
 function CartSection({ cartResponse, updateCartResponse }) {
-    //Api call
-    console.log(cartResponse);
     let productsResponse = ProductExtractor(cartResponse.data);
     
     return (

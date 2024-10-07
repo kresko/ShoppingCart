@@ -8,10 +8,8 @@ function Navigation({ cartData }) {
      const [updatedCartQuantity, setUpdatedCartQuantity] = useState(0);
 
      useEffect(() => {
-        console.log("cartData:", cartData);
         if (cartData && cartData.data && cartData.data.products) {
             const newQuantity = CartQuantityExtractor(cartData);
-            console.log("newQuantity:", newQuantity);
             setUpdatedCartQuantity(newQuantity);
         }
     }, [cartData]);
@@ -21,7 +19,7 @@ function Navigation({ cartData }) {
             <div className="navigation">
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                </ul>s
+                </ul>
 
                 <div className="add-to-cart-button-container">
                     <Link to="cart" className="add-to-cart-button">
